@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Верстка «Coffeeok-service»</title>
+</head>
+
+<body>
+	<div class="rootpage">
+		<h1>Верстка «Coffeeok-service»</h1>
+		<h2>Готові сторінки:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="index.html">Головна</a></li>
+			<li><a target="_blank" href="brands.html">Бренди</a></li>
+			<li><a target="_blank" href="remont-kofemashin-saeco.html">Ремонт кавомашин Saeco в Києві</a></li>
+			<li><a target="_blank" href="remont-kofemashiny-saeco-minuto.html">Ремонт кавомашин Saeco Minuto в Києві</a>
+			</li>
+			<li><a target="_blank" href="remont-zamena-kofemashiny.html">Заміна кавомолки в Києві</a></li>
+			<li><a target="_blank" href="remont-kofemashin-na-poznyakah.html">Ремонт кавомашин у Позняках</a></li>
+			<li><a target="_blank" href="rajony.html">Райони</a></li>
+			<li><a target="_blank" href="tseny-na-remont-kofemashin.html">Ціни на ремонт кавомашин та кавоварок</a></li>
+			<li><a target="_blank" href="neispravnosti.html">Неполадки</a></li>
+			<li><a target="_blank" href="kofemashina-ne-melit-kofe.html">Кавомашина не меле каву</a></li>
+			<li><a target="_blank" href="contacts.html">Контакти</a></li>
+			<li><a target="_blank" href="staff.html">Майстри</a></li>
+			<li><a target="_blank" href="ivanov-ivan-ivanovich.html">Майстер Іванов Іван Іванович</a></li>
+			<li><a target="_blank" href="article.html">Стаття</a></li>
+			<li><a target="_blank" href="blog.html">Блог</a></li>
+			<li><a target="_blank" href="404-page.html">404-page</a></li>
+			<li><a target="_blank" href="text-page.html">Text page</a></li>
+			<li><a target="_blank" href="FAQ.html">FAQ</a></li>
+			<li><a target="_blank" href="status-remonta.html">Статус ремонту</a></li>
+			<li><a target="_blank" href="about.html">Про компанію</a></li>
+
+		</ol>
+		<h2>Попапи:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="ivanov-ivan-ivanovich.html#popup-reviews">Залишити відгук</a></li>
+			<li><a target="_blank" href="index.html#popup-feedback">Зв’яжіться з нами</a></li>
+			<li><a target="_blank" href="index.html#popup-feedback-sent">Ваша заявка відправлена</a></li>
+		</ol>
+		<div class="rootpage__tnx">
+			<h2>Дякую за замовлення!</h2>
+			<p>Звертайтесь ще!</p>
+		</div>
+	</div>
+</body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #805A3B;
+		background-color: #FEF2E4;
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #523634;
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #c2a288;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		color: #301B28;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #301B28;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		border-radius: 200px;
+		padding: 20px 65px;
+		line-height: 140%;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 40px;
+			padding: 20px;
+		}
+	}
+
+	.rootpage__contacts {
+		background: #32b5a4;
+
+	}
+
+	.rootpage__contacts a {
+		color: #ebe691;
+	}
+
+	.rootpage__tnx {
+		background: #FD974F;
+		margin: 0px 0px 1rem 0px;
+	}
+</style>
+
+</html>
